@@ -47,9 +47,34 @@
     console.log(notAssigned);  // Prints "undefined" because no value was assigned
   }
   
+  let x = Number(prompt("Enter a value for x:"));
+  console.log("Value of x:", x);
   
-  let x = prompt("Enter a value for x:");
-console.log(x); 
-
-let y = prompt("Enter a value for y:");
-console.log(y); 
+  let y = Number(prompt("Enter a value for y:"));
+  console.log("Value of y:", y);
+  
+  // Arithmetic Operators
+  console.log("Sum of x and y:", x + y);  // Addition
+  console.log("Difference of x and y:", x - y);  // Subtraction
+  console.log("Product of x and y:", x * y);  // Multiplication
+  console.log("Quotient of x and y:", x / y);  // Division
+  console.log("Remainder of x and y:", x % y);  // Modulus
+  
+  // Assignment Operators
+  x += 5;  // Adds 5 to x
+  console.log("x after x += 5:", x);
+  
+  y -= 2;  // Subtracts 2 from y
+  console.log("y after y -= 2:", y);
+  
+  // Comparison Operators
+  console.log("x is equal to y:", x == y);   // Equal to
+  console.log("x is not equal to y:", x != y);   // Not equal to
+  console.log("x is greater than y:", x > y);    // Greater than
+  console.log("x is less than y:", x < y);    // Less than
+  
+  // Logical Operators
+  console.log("x is greater than 5 AND y is less than 10:", x > 5 && y < 10);  // AND
+  console.log("x is less than 10 OR y is greater than 10:", x < 10 || y > 10);  // OR
+  console.log("Not (x is equal to y):", !(x == y));  // NOT
+  
